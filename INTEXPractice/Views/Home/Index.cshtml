@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model InsuranceData
+
+<form method="post" asp-controller="Inference" asp-action="Score">
+
+    @*<div><label>Age:</label><input asp-for="Age" value="25" /></div>
+    <div><label>BMI:</label><input asp-for="Bmi" value="32.23" /></div>
+    <div><label>Children</label><input asp-for="NumChildren" value="1" /></div>
+    <div><label>Male?</label><input asp-for="Male" value="0" /></div>
+    <div><label>Smoker?</label><input asp-for="Smoker" value="0" /></div>
+    <div><label>Region_Northwest</label><input asp-for="Region_Northwest" value="0" /></div>
+    <div><label>Region_Southeast</label><input asp-for="Region_Southeast" value="1" /></div>
+    <div><label>Region_Southwest</label><input asp-for="Region_Southwest" value="0" /></div>*@
+
+    <div><label>Day:</label><input asp-for="Day" value="25" /></div>
+    <div><label>Year:</label><input asp-for="Year" value="32.23" /></div>
+    <div><label>Month</label><input asp-for="Month" value="1" /></div>
+    <div><label>Intersection Related</label><input asp-for="Intersection_Related" value="0" /></div>
+    <div><label>Teenage Driver Involved</label><input asp-for="Teenage_Driver_Involved" value="0" /></div>
+    <div><label>Night/Dark</label><input asp-for="Night_Dark_Condition" value="0" /></div>
+    <div><label>Single Vehicle</label><input asp-for="Single_Vehicle" value="1" /></div>
+    <div><label>Milepoint</label><input asp-for="Milepoint" value="0" /></div>
+
+    <button type="submit">Calculate</button>
+</form>
